@@ -6,6 +6,11 @@
     <title>22 - Checkout Form - HTML, CSS and Git Exercises</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/week3-forms.css" />
+    <style>
+      .form-input {
+        margin: 15px;
+      }
+    </style>
   </head>
 
   <body>
@@ -33,13 +38,25 @@
             </tr>
           </table>
         </div>
-
         <div class="checkout">
           <h2 class="checkout__title">Checkout</h2>
           <form method="GET" id="checkout-form" class="checkout__form">
             <!-- Add the form fields here -->
-
-            <button type="submit">Complete Purchase</button>
+            <div class="form-input">
+              <label for="cust-name">Name</label>
+              <input type="text" name="customer-name" id="cust-name" />
+            </div>
+            <div class="form-input">
+              <label for="cust-email">Email</label>
+              <input type="email" name="customer-email" id="cust-email" />
+            </div>
+            <div class="form-input">
+              <label for="cust-phone">Phone</label>
+              <input type="tel" name="customer-phone" id="cust-phone" />
+            </div>
+            <div class="form-input">
+              <button type="submit">Complete Purchase</button>
+            </div>
           </form>
         </div>
       </main>
